@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090908">
+  <meta name="description" content="Un moment de réflexion intérieure à travers The Eye That Sees Everything.">
+  <title>The Eye That Sees Everything — Votre lecture intérieure</title>
+  <style>
+    :root{color-scheme:dark;--ink:#090908;--ink2:#100f0e;--panel:#15120f;--gold:#c5a76c;--gold2:#dfc285;--cream:#e8e3d9;--muted:#a19b8f;--violet:#241a2e;--wine:#6c2838;--line:rgba(197,167,108,.22);font-family:Arial,Helvetica,sans-serif;background:var(--ink);color:var(--cream);font-synthesis:none;text-rendering:optimizeLegibility}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;background:var(--ink)}body{margin:0;min-width:320px;background:var(--ink);color:var(--cream);font-size:15px;line-height:1.72}button,input{font:inherit}button,a,input{touch-action:manipulation}a{color:inherit;text-decoration:none}button{color:inherit}button:not(:disabled),a[href],input[type=date]{cursor:pointer}::selection{background:var(--gold);color:var(--ink)}[hidden]{display:none!important}
+    h1,h2,h3,.serif{font-family:Georgia,'Times New Roman',serif;font-weight:400;letter-spacing:-.025em}h1,h2,h3,p{margin-top:0}.shell{width:min(1200px,calc(100% - 64px));margin-inline:auto}.eyebrow{display:flex;align-items:center;gap:12px;color:var(--gold);font-size:9px;font-weight:700;letter-spacing:.22em;line-height:1.5}.eyebrow:before{content:"";width:29px;height:1px;background:var(--gold)}
+    .site-header{position:relative;z-index:3;display:flex;justify-content:space-between;align-items:center;width:min(1320px,calc(100% - 64px));margin:auto;padding:22px 0;border-bottom:1px solid rgba(197,167,108,.13)}.brand{display:inline-flex;align-items:center;gap:11px}.brand-mark{display:grid;place-items:center;width:35px;height:35px;border:1px solid rgba(197,167,108,.62);border-radius:50%;color:var(--gold)}.brand-name{display:flex;flex-direction:column;font-size:10px;font-weight:700;letter-spacing:.16em;line-height:1.3}.brand-name small{color:var(--gold);font-size:7px;letter-spacing:.22em}.header-note,.header-link{display:flex;align-items:center;gap:9px;color:#bdb5a6;font-size:9px;letter-spacing:.16em}.status-dot{width:5px;height:5px;border-radius:50%;background:var(--gold);box-shadow:0 0 11px var(--gold)}
+    .quiz-page{position:relative;min-height:100svh;overflow:hidden;background:radial-gradient(ellipse at 78% 23%,rgba(54,37,61,.31),transparent 33%),var(--ink)}.hero-backdrop{position:absolute;z-index:0;top:70px;right:-8%;width:62%;height:660px;background:linear-gradient(90deg,var(--ink),transparent 44%),linear-gradient(0deg,var(--ink),transparent 40%),url('/manus-storage/async-images/xO3vCWq1aXVGS4W0miPhVt/image-1.webp') 70% 42%/cover no-repeat;opacity:.47;mask-image:linear-gradient(90deg,transparent,#000 35%,#000 77%,transparent)}.quiz-hero{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.02fr) minmax(370px,.8fr);align-items:center;gap:clamp(48px,8vw,125px);width:min(1170px,calc(100% - 64px));min-height:calc(100svh - 145px);margin:auto;padding:68px 0 75px}.hero-copy{max-width:650px;padding-bottom:30px;animation:rise .8s both}.hero-copy h1{max-width:660px;margin:23px 0 19px;color:#f0ece3;font-size:clamp(52px,6.4vw,88px);line-height:.98}.hero-copy h1 em,.sales-hero h1 em,.narrow h2 em,.split-title h2 em,.inaction h2 em{color:var(--gold2);font-weight:400}.hero-intro{max-width:470px;color:#c4beb2;font-family:Georgia,'Times New Roman',serif;font-size:clamp(20px,2vw,25px);line-height:1.42}.hero-caption{display:flex;align-items:center;gap:9px;margin-top:23px;color:var(--gold);font-size:10px;letter-spacing:.08em}.spark{font-size:15px}
+    .quiz-card{width:100%;max-width:475px;padding:29px 31px 21px;border:1px solid rgba(197,167,108,.33);background:linear-gradient(145deg,rgba(26,23,20,.97),rgba(16,14,13,.98));box-shadow:0 26px 100px rgba(0,0,0,.46),inset 0 1px rgba(255,255,255,.035);backdrop-filter:blur(12px);animation:rise .85s .12s both}.quiz-head{display:flex;justify-content:space-between;align-items:flex-start;gap:18px}.card-kicker,.step-label{color:#aa9c7d;font-size:8px;font-weight:700;letter-spacing:.2em}.quiz-head h2{margin:8px 0 0;color:#eee9df;font-size:30px;line-height:1}.step-count{color:var(--gold2);font-family:Georgia,serif;font-size:28px;line-height:1;white-space:nowrap}.step-count small{color:#797267;font-family:Arial,sans-serif;font-size:10px;letter-spacing:.12em}.progress{height:2px;margin:23px 0;background:#37312a}.progress span{display:block;height:100%;background:linear-gradient(90deg,#8c6f42,#dfc285);transition:width .4s ease}.step-content{min-height:216px;animation:fade .32s both}.step-label{margin:0 0 8px}.question{max-width:385px;margin:0 0 19px;color:#eee9df;font-size:28px;line-height:1.15}.options{display:grid;grid-template-columns:1fr 1fr;gap:8px}.option{display:flex;align-items:center;gap:10px;min-height:47px;padding:10px 12px;border:1px solid rgba(197,167,108,.2);background:rgba(255,255,255,.018);color:#d7d1c6;text-align:left;font-size:12px;transition:.2s}.option:hover{border-color:rgba(197,167,108,.7);color:#fff;transform:translateY(-1px)}.option.selected{border-color:var(--gold);background:rgba(197,167,108,.12);color:#f2dfb4}.radio{position:relative;flex:0 0 13px;width:13px;height:13px;border:1px solid #786f60;border-radius:50%}.option.selected .radio{border-color:var(--gold)}.option.selected .radio:after{position:absolute;inset:3px;border-radius:50%;background:var(--gold2);content:""}.arrow{margin-left:auto;color:#9e875c;opacity:0}.option:hover .arrow,.option.selected .arrow{opacity:1}.date-input{width:100%;min-height:50px;padding:0 14px;border:1px solid rgba(197,167,108,.38);border-radius:0;outline:none;background:rgba(255,255,255,.025);color:#eee9df;color-scheme:dark;font-size:14px}.date-input:focus{border-color:var(--gold);box-shadow:0 0 0 2px rgba(197,167,108,.14)}.field-hint{display:block;margin-top:8px;color:#8f887c;font-size:10px}.quiz-actions{display:flex;justify-content:space-between;align-items:center;gap:15px;padding-top:18px;border-top:1px solid rgba(197,167,108,.14)}.back,.primary,.buy{display:inline-flex;justify-content:center;align-items:center;gap:10px;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;transition:transform .2s,box-shadow .2s,background .2s,opacity .2s}.back{padding:12px 0;border:0;background:transparent;color:#a29a8e}.back:disabled{opacity:.3;cursor:default}.primary{min-height:45px;padding:0 17px;border:1px solid #c5a76c;background:linear-gradient(135deg,#d7bd89,#b59256);color:#17130c}.primary:hover:not(:disabled),.buy:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(197,167,108,.22)}.primary:disabled{opacity:.42;cursor:not-allowed}.privacy{display:flex;justify-content:center;align-items:center;gap:7px;margin:16px 0 0;color:#817b71;font-size:9px}.quiz-footer{position:relative;z-index:1;display:flex;justify-content:space-between;gap:20px;width:min(1170px,calc(100% - 64px));margin:auto;padding:18px 0 22px;border-top:1px solid rgba(197,167,108,.13);color:#766f65;font-size:8px;letter-spacing:.1em}.quiz-footer span:last-child{letter-spacing:.02em}
+    .sales-page{overflow:hidden;background:var(--ink)}.sales-header{width:min(1320px,calc(100% - 64px))}.header-link{color:var(--gold)}.sales-hero{position:relative;display:flex;align-items:center;min-height:min(780px,86svh);overflow:hidden;background:#0a0908}.sales-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 43%;opacity:.67}.hero-vignette{position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,9,8,.99),rgba(9,9,8,.82) 36%,rgba(9,9,8,.31) 75%,rgba(9,9,8,.33)),linear-gradient(0deg,var(--ink),transparent 23%,rgba(9,9,8,.1) 75%,var(--ink))}.sales-hero-copy{position:relative;z-index:1;width:min(1260px,calc(100% - 80px));margin:auto;padding:80px 0 100px;animation:rise .8s both}.sales-hero-copy .eyebrow{margin-bottom:22px}.sales-hero h1{max-width:790px;margin:0;color:#f1ece2;font-size:clamp(50px,7vw,94px);line-height:.97}.sales-subhead{max-width:700px;margin:26px 0 0;color:#d2cabe;font-family:Georgia,'Times New Roman',serif;font-size:clamp(21px,2.5vw,30px);line-height:1.3}.scroll-cue{display:inline-flex;align-items:center;gap:12px;margin-top:34px;color:var(--gold2);font-size:9px;letter-spacing:.18em}.hero-index{position:absolute;right:max(34px,calc((100% - 1260px)/2));bottom:30px;z-index:1;color:#b8aa90;font-family:Georgia,serif;font-size:17px;letter-spacing:.1em}
+    .sales-section{position:relative;padding:110px max(40px,calc((100% - 1170px)/2))}.section-no{position:absolute;top:42px;left:max(32px,calc((100% - 1170px)/2));color:#857b68;font-size:8px;font-weight:700;letter-spacing:.2em}.intro{padding-top:142px;padding-bottom:112px;background:radial-gradient(ellipse at 70% 47%,rgba(35,26,44,.3),transparent 40%)}.narrow{max-width:740px;margin:auto}.small-gold{color:var(--gold2)!important;font-family:Arial,sans-serif!important;font-size:12px!important;letter-spacing:.04em;line-height:1.9!important}.narrow h2{margin:25px 0 28px;color:#eee8dc;font-size:clamp(45px,6vw,72px);line-height:1.02}.narrow p,.system-heading>p:last-child,.system-close,.split-body p,.benefit-close,.inaction-copy>p:not(.eyebrow),.final-copy>p:not(.eyebrow){color:#c8c1b6;font-family:Georgia,'Times New Roman',serif;font-size:clamp(19px,2vw,24px);line-height:1.52}.narrow p{margin-bottom:23px}.narrow strong,.system-close strong,.benefit-close strong,.final-copy strong{color:#e9dfca;font-weight:500}.narrow .closing-line{margin-top:31px;color:#e1d7c4}
+    .visual{position:relative;overflow:hidden;background:#100e0d}.visual img{display:block;width:100%;height:100%;object-fit:cover}.visual:after{position:absolute;inset:0;pointer-events:none;content:"";background:linear-gradient(90deg,var(--ink),transparent 25%,transparent 75%,var(--ink)),linear-gradient(0deg,var(--ink),transparent 25%,transparent 78%,var(--ink))}.visual-wide{height:clamp(240px,34vw,480px)}.visual-wide img{object-position:center 46%;opacity:.8}.visual-inset{width:min(1020px,calc(100% - 80px));height:clamp(230px,31vw,400px);margin:0 auto 15px;border:1px solid rgba(197,167,108,.2)}.visual-inset img{object-position:center 56%;opacity:.84}.visual-close{height:clamp(170px,23vw,280px);opacity:.63}.visual-close img{object-position:center 46%}
+    .system{display:grid;grid-template-columns:minmax(200px,.72fr) minmax(0,1.3fr);column-gap:80px;row-gap:30px;padding-top:137px;padding-bottom:130px;background:linear-gradient(180deg,#090908,#100e0d 55%,#090908)}.system .section-no{top:47px}.system-heading .eyebrow{margin-bottom:15px}.system-heading h2{max-width:560px;margin:0 0 21px;color:#eee8dc;font-size:clamp(42px,5vw,63px);line-height:1}.system-heading h2 i,.benefit-heading h2 i{color:var(--gold2);font-weight:400}.system-heading>p:last-child{max-width:600px;margin:0;font-size:21px}.force-list{display:grid;grid-column:2;border-top:1px solid var(--line)}.force{display:grid;grid-template-columns:44px 1fr 34px;align-items:center;gap:18px;min-height:94px;padding:18px 5px;border-bottom:1px solid var(--line)}.force-num{color:var(--gold);font-family:Georgia,serif;font-size:24px}.force h3{margin:0;color:#e5d9bf;font-family:Georgia,serif;font-size:25px;font-weight:400}.force p{margin:2px 0 0;color:#969084;font-size:12px}.symbol{color:#ad8e57;font-family:Georgia,serif;font-size:25px;text-align:center}.system-close{grid-column:2;max-width:650px;margin:2px 0 0}
+    .risk{padding-top:125px;padding-bottom:138px;background:radial-gradient(ellipse at 18% 48%,rgba(76,31,43,.15),transparent 42%)}.split-copy{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,9vw,140px)}.split-title{align-self:start}.split-title .eyebrow{margin-bottom:16px}.split-title h2{max-width:540px;margin:0;color:#eee8dc;font-size:clamp(43px,5.3vw,68px);line-height:.99}.split-title h2 em{display:block;margin-top:8px;font-size:.7em;line-height:1.08}.split-body p{margin-bottom:27px}.split-body .red-line{margin:30px 0;color:#bb7377;font-size:25px;font-style:italic}
+    .benefits{padding-top:123px;padding-bottom:98px;background:#100e0d}.benefit-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(45px,8vw,120px)}.benefit-heading .eyebrow{margin-bottom:16px}.benefit-heading h2{max-width:520px;margin:0 0 19px;color:#eee8dc;font-size:clamp(42px,5vw,64px);line-height:1}.benefit-heading>p:last-child{color:#a59d90;font-family:Georgia,serif;font-size:21px}.benefit-list{border-top:1px solid var(--line)}.benefit-row{display:grid;grid-template-columns:38px 1fr;gap:19px;align-items:start;padding:19px 0;border-bottom:1px solid var(--line)}.benefit-row span{padding-top:3px;color:var(--gold);font-family:Georgia,serif;font-size:19px}.benefit-row p{margin:0;color:#d3ccbf;font-family:Georgia,serif;font-size:22px;line-height:1.4}.benefit-close{max-width:800px;margin:52px auto 0;text-align:center}
+    .inaction{position:relative;overflow:hidden;padding:138px max(40px,calc((100% - 1170px)/2)) 128px;background:radial-gradient(ellipse at 78% 50%,rgba(96,31,47,.26),transparent 47%),#0b0909}.inaction:after{position:absolute;top:13%;right:-100px;width:360px;height:500px;border-radius:50%;background:rgba(104,29,49,.13);filter:blur(90px);content:""}.inaction-copy{position:relative;z-index:1;max-width:700px;margin:auto}.inaction-copy .eyebrow{margin-bottom:15px}.inaction h2{margin:0 0 25px;color:#eee8dc;font-size:clamp(55px,8vw,94px);line-height:.93}.inaction-copy>p:not(.eyebrow){margin-bottom:23px}.inaction-copy .small-gold{margin-top:35px}
+    .offer{position:relative;padding:128px 32px 138px;background:linear-gradient(180deg,#0b0909,#100e0d)}.offer .section-no{left:max(32px,calc((100% - 1170px)/2))}.offer-card{width:min(660px,100%);margin:auto;padding:50px clamp(22px,6vw,68px) 40px;border:1px solid rgba(197,167,108,.43);background:linear-gradient(148deg,rgba(35,29,23,.88),rgba(15,13,12,.98));box-shadow:0 26px 120px rgba(0,0,0,.45),inset 0 1px rgba(255,255,255,.035);text-align:center}.offer-ornament{display:flex;flex-direction:column;align-items:center;gap:9px;color:var(--gold)}.offer-ornament span{font-size:8px;letter-spacing:.22em}.offer-kicker{margin:24px 0 -20px;color:var(--gold);font-size:9px;letter-spacing:.2em;text-transform:uppercase}.offer-title{margin:27px 0 5px;color:#eee4d1;font-family:Georgia,serif;font-size:35px;line-height:1.1}.offer-description{max-width:430px;margin:auto;color:#aaa295;font-family:Georgia,serif;font-size:18px}.price-row{display:flex;flex-direction:column;align-items:center;margin:28px 0 20px;padding:20px 0 15px;border-block:1px solid var(--line)}.old-price{color:#9e978b;font-size:11px}.price-label{margin-top:11px;color:#cfc5b4;font-size:10px;letter-spacing:.12em;text-transform:uppercase}.price{color:var(--gold2);font-family:Georgia,serif;font-size:76px;line-height:1}.price small{font-size:.55em}.assurances{display:flex;justify-content:center;flex-wrap:wrap;gap:20px;color:#c8b88f;font-size:11px}.refund{margin:13px 0 21px;color:#a9a194;font-family:Georgia,serif;font-size:17px}.buy{width:100%;min-height:59px;padding:14px 19px;border:1px solid #d0b477;background:linear-gradient(110deg,#ddc58f,#b6955c);color:#17130d;box-shadow:0 8px 24px rgba(0,0,0,.22);text-align:center;line-height:1.45}.secure{display:block;margin:12px 0 0;color:#817a6f;font-size:9px}
+    .final{position:relative;padding:128px max(40px,calc((100% - 1170px)/2)) 128px;background:radial-gradient(ellipse at 70% 43%,rgba(44,32,53,.34),transparent 48%),var(--ink)}.final-copy{max-width:760px;margin:auto}.final-copy .eyebrow{margin-bottom:17px}.final-copy h2{margin:0 0 18px;color:#eee8dc;font-size:clamp(46px,6vw,72px);line-height:1}.final-copy>p:not(.eyebrow){margin-bottom:22px}.final-copy h3{margin:30px 0;color:var(--gold2);font-size:clamp(30px,4vw,44px);line-height:1.12}.final-copy .buy{max-width:560px}.sales-footer{display:flex;flex-direction:column;align-items:center;gap:17px;padding:34px 24px 39px;border-top:1px solid rgba(197,167,108,.15);text-align:center}.sales-footer p{max-width:680px;margin:0;color:#827b70;font-family:Georgia,serif;font-size:14px;line-height:1.5}.sales-footer>small{color:#6c665d;font-size:8px;letter-spacing:.16em}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .reveal{opacity:1;transform:none}.js-motion .reveal{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}.js-motion .reveal.visible{opacity:1;transform:none}
+    @keyframes rise{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}@keyframes fade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.js-motion .reveal{opacity:1;transform:none}}
+    @media(max-width:900px){.quiz-hero{grid-template-columns:1fr;gap:32px;width:min(690px,calc(100% - 48px));padding:65px 0 52px}.hero-copy{max-width:610px;padding:0}.hero-copy h1{max-width:580px;font-size:clamp(58px,10vw,80px)}.hero-backdrop{right:-20%;width:90%;height:590px;opacity:.34}.quiz-card{max-width:unset}.quiz-footer{width:calc(100% - 48px)}.system{grid-template-columns:1fr;row-gap:25px}.system-heading,.force-list,.system-close{grid-column:1}.system-heading{max-width:700px}.split-copy{gap:48px}.benefit-layout{gap:45px}}
+    @media(max-width:620px){body{font-size:14px}.site-header,.sales-header{width:calc(100% - 36px);padding:16px 0}.brand-mark{width:30px;height:30px}.brand-name{font-size:9px}.brand-name small{font-size:6px}.header-note{font-size:0}.status-dot{width:6px;height:6px}.header-link{font-size:8px;letter-spacing:.1em}.quiz-hero{width:calc(100% - 36px);gap:27px;min-height:auto;padding:58px 0 48px}.hero-copy .eyebrow{font-size:8px;letter-spacing:.16em}.hero-copy h1{margin:18px 0 16px;font-size:clamp(49px,14vw,68px)}.hero-intro{margin:0;font-size:21px}.hero-caption{margin-top:18px}.hero-backdrop{top:20px;right:-43%;width:130%;height:490px;opacity:.31}.quiz-card{padding:22px 17px 18px}.quiz-head h2{font-size:27px}.step-content{min-height:220px}.question{font-size:26px}.options{grid-template-columns:1fr;gap:7px}.option{min-height:43px}.quiz-actions{padding-top:15px}.primary{gap:7px;min-height:43px;padding:0 12px;font-size:9px;letter-spacing:.055em}.privacy{font-size:8px;text-align:center}.quiz-footer{width:calc(100% - 36px);flex-direction:column;gap:5px;font-size:7px}.sales-hero{min-height:720px;min-height:78svh;align-items:flex-end}.sales-hero img{object-position:63% center;opacity:.6}.hero-vignette{background:linear-gradient(0deg,var(--ink),rgba(9,9,8,.91) 20%,rgba(9,9,8,.47) 57%,rgba(9,9,8,.35)),linear-gradient(90deg,rgba(9,9,8,.34),transparent)}.sales-hero-copy{width:calc(100% - 40px);padding:72px 0 85px}.sales-hero h1{font-size:clamp(48px,13.5vw,68px)}.sales-subhead{margin-top:19px;font-size:22px}.hero-index{right:20px;bottom:22px}.sales-section{padding:93px 22px 81px}.section-no{top:29px;left:22px;font-size:7px}.intro{padding-top:104px;padding-bottom:79px}.narrow h2{margin:20px 0 22px;font-size:51px}.narrow p,.system-heading>p:last-child,.system-close,.split-body p,.benefit-close,.inaction-copy>p:not(.eyebrow),.final-copy>p:not(.eyebrow){font-size:20px}.visual-wide{height:240px}.visual-wide img{object-position:58% center}.system{padding-top:98px;padding-bottom:88px}.system-heading h2{font-size:49px}.force{grid-template-columns:30px 1fr 24px;gap:10px;min-height:86px}.force h3{font-size:23px}.force p{max-width:270px;font-size:11px;line-height:1.45}.visual-inset{width:calc(100% - 36px);height:225px}.risk{padding-top:98px;padding-bottom:88px}.split-copy,.benefit-layout{grid-template-columns:1fr;gap:32px}.split-title h2{max-width:480px;font-size:50px}.split-title h2 em{font-size:.74em}.split-body p{margin-bottom:20px}.split-body .red-line{margin:23px 0}.benefits{padding-top:96px;padding-bottom:74px}.benefit-heading h2{font-size:50px}.benefit-row{gap:12px;padding:16px 0}.benefit-row p{font-size:20px}.benefit-close{margin-top:36px;text-align:left}.inaction{padding:103px 23px 92px}.inaction .section-no{left:23px}.inaction h2{font-size:67px}.offer{padding:97px 18px 98px}.offer .section-no{left:20px}.offer-card{padding:38px 20px 29px}.offer-title{font-size:31px}.price{font-size:69px}.buy{gap:8px;min-height:62px;padding:12px;font-size:9px;letter-spacing:.055em}.assurances{gap:12px;font-size:10px}.final{padding:99px 23px 86px}.final-copy h2{font-size:52px}.final-copy h3{font-size:34px}.visual-close{height:170px}.sales-footer{gap:13px;padding:27px 20px 31px}.sales-footer p{font-size:13px}}
+  </style>
+</head>
+<body>
+  <!-- Les images de la version Manus utilisent les URL /manus-storage/... du projet. Pour un autre hébergeur, remplacez ces trois chemins par vos propres URL d’images publiques. -->
+  <main class="quiz-page" id="quizView">
+    <div class="hero-backdrop" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#quizView" aria-label="The Eye That Sees Everything — accueil">
+        <span class="brand-mark" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M2.5 12s3.4-6 9.5-6 9.5 6 9.5 6-3.4 6-9.5 6-9.5-6-9.5-6Z" stroke="currentColor" stroke-width="1.25"/><circle cx="12" cy="12" r="3.1" stroke="currentColor" stroke-width="1.25"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg></span>
+        <span class="brand-name">THE EYE <small>THAT SEES EVERYTHING</small></span>
+      </a>
+      <span class="header-note"><i class="status-dot"></i> UNE EXPÉRIENCE DE RÉFLEXION</span>
+    </header>
+    <section class="quiz-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">UN REGARD AU-DELÀ DES APPARENCES</p>
+        <h1>Certaines vérités ne demandent qu’à être <em>regardées.</em></h1>
+        <p class="hero-intro">Répondez à ces 5 questions et découvrez ce que l’univers essaie réellement de vous dire sur votre relation…</p>
+        <div class="hero-caption"><span class="spark" aria-hidden="true">✧</span> Cinq questions. Un moment pour vous.</div>
+      </div>
+      <section class="quiz-card" aria-label="Quiz de cinq questions">
+        <div class="quiz-head"><div><span class="card-kicker">VOTRE LECTURE INTÉRIEURE</span><h2>Commençons par vous.</h2></div><span class="step-count" id="stepCount">01 <small>/ 05</small></span></div>
+        <div class="progress" role="progressbar" aria-label="Progression du quiz" aria-valuemin="1" aria-valuemax="5" aria-valuenow="1"><span id="progressFill" style="width:20%"></span></div>
+        <div class="step-content" id="stepContent" aria-live="polite"></div>
+        <div class="quiz-actions"><button class="back" id="backButton" type="button" disabled><span aria-hidden="true">←</span> Retour</button><button class="primary" id="nextButton" type="button" disabled><span id="nextLabel">Continuer</span><span aria-hidden="true">→</span></button></div>
+        <p class="privacy"><span aria-hidden="true">♢</span> Vos réponses restent dans cet onglet et ne sont pas transmises.</p>
+      </section>
+    </section>
+    <footer class="quiz-footer"><span>THE EYE THAT SEES EVERYTHING</span><span>Une expérience symbolique de réflexion personnelle.</span></footer>
+  </main>
+
+  <main class="sales-page" id="salesView" hidden>
+    <header class="site-header sales-header">
+      <a class="brand" href="#quiz" id="reviewAnswers" aria-label="Revenir au quiz">
+        <span class="brand-mark" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M2.5 12s3.4-6 9.5-6 9.5 6 9.5 6-3.4 6-9.5 6-9.5-6-9.5-6Z" stroke="currentColor" stroke-width="1.25"/><circle cx="12" cy="12" r="3.1" stroke="currentColor" stroke-width="1.25"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg></span>
+        <span class="brand-name">THE EYE <small>THAT SEES EVERYTHING</small></span>
+      </a>
+      <a class="header-link" href="#offre">DÉCOUVRIR L’OFFRE <span aria-hidden="true">→</span></a>
+    </header>
+    <section class="sales-hero" id="vente">
+      <img src="/manus-storage/async-images/xO3vCWq1aXVGS4W0miPhVt/image-1.webp" alt="Œil d’Horus ancien, éclairé d’or dans l’obscurité" fetchpriority="high">
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <div class="sales-hero-copy"><p class="eyebrow">THE EYE THAT SEES EVERYTHING</p><h1>Vous venez de découvrir quelque chose que la plupart des gens n’osent même pas regarder en face…</h1><p class="sales-subhead">Vos réponses révèlent que votre relation contient des zones « malades »… et que si vous ne les traitez pas maintenant, elles finiront par tout détruire.</p><a class="scroll-cue" href="#lecture">POURSUIVRE LA LECTURE <span aria-hidden="true">↓</span></a></div>
+      <div class="hero-index">01 <span>—</span> 09</div>
+    </section>
+    <section class="sales-section intro" id="lecture">
+      <div class="section-no">01 / LE CONSTAT</div><div class="narrow reveal">
+        <p class="small-gold">Vous avez répondu.<br>Et ce que vos réponses disent est clair :</p>
+        <h2>Votre relation n’est pas <em>« un peu compliquée ».</em></h2>
+        <p>Elle porte des blessures invisibles. Des fractures énergétiques. Des déséquilibres que ni les discussions, ni les thérapeutes classiques, ni les « efforts » ne peuvent réellement soigner.</p>
+        <p>Parce que le vrai problème n’est pas seulement émotionnel.<br>Il est astral, numérologique et énergétique.</p>
+        <p class="closing-line">C’est exactement pour ça que <i>The Eye That Sees Everything</i> a été créé.</p>
+      </div>
+    </section>
+    <figure class="visual visual-wide reveal"><img src="/manus-storage/async-images/xO3vCWq1aXVGS4W0miPhVt/image-2.webp" alt="Œil d’Horus gravé dans une pierre ancienne, à la lumière dorée" loading="lazy"></figure>
+    <section class="sales-section system">
+      <div class="section-no">02 / LE SYSTÈME</div>
+      <div class="system-heading reveal"><p class="eyebrow">TROIS FORCES ANCIENNES</p><h2>Qu’est-ce que <i>The Eye That Sees Everything</i> ?</h2><p>C’est un programme complet qui vous apprend à utiliser trois forces anciennes pour identifier et soigner les parties malades de votre relation :</p></div>
+      <div class="force-list reveal">
+        <article class="force"><span class="force-num">I</span><div><h3>L’Astrologie</h3><p>(pour voir les blocages karmiques et les cycles toxiques)</p></div><span class="symbol" aria-hidden="true">✳</span></article>
+        <article class="force"><span class="force-num">II</span><div><h3>La Numérologie</h3><p>(pour révéler les déséquilibres cachés dans vos dates et vos noms)</p></div><span class="symbol" aria-hidden="true">◎</span></article>
+        <article class="force"><span class="force-num">III</span><div><h3>La Magie</h3><p>(pour agir concrètement et rétablir l’harmonie)</p></div><span class="symbol" aria-hidden="true">☽</span></article>
+      </div>
+      <p class="system-close reveal"><strong>Ce n’est pas de la théorie.</strong><br>C’est un système précis qui vous montre exactement où votre relation saigne… et comment arrêter l’hémorragie.</p>
+    </section>
+    <figure class="visual visual-inset reveal"><img src="/manus-storage/async-images/xO3vCWq1aXVGS4W0miPhVt/image-3.webp" alt="Manuscrit céleste ancien et roue astrologique en laiton patiné" loading="lazy"></figure>
+    <section class="sales-section risk">
+      <div class="section-no">03 / LES FORCES INVISIBLES</div><div class="split-copy">
+        <div class="split-title reveal"><p class="eyebrow">CE QUI SE JOUE EN SILENCE</p><h2>Pourquoi la plupart des couples échouent <em>(et pourquoi le vôtre risque d’en faire partie)</em></h2></div>
+        <div class="split-body reveal"><p>La plupart des gens croient que l’amour suffit.<br>Ils pensent que « communiquer plus », « faire plus d’efforts » ou « attendre que ça passe » va régler le problème.</p><p class="red-line">Ils ont tort.</p><p>Quand les forces invisibles ne sont pas alignées, l’amour s’épuise.<br>La confiance s’érode.<br>L’attraction disparaît.<br>Et un jour, vous vous réveillez à côté de quelqu’un qui est devenu un étranger… ou pire, un ennemi.</p><p class="red-line">Et ce jour-là, il sera trop tard.</p><p>Vous ressentirez ce vide.<br>Ce sentiment d’avoir tout perdu.<br>Cette douleur sourde de savoir que vous auriez pu agir… mais que vous avez préféré fermer les yeux.</p></div>
+      </div>
+    </section>
+    <section class="sales-section benefits">
+      <div class="section-no">04 / VOTRE PARCOURS</div><div class="benefit-layout">
+        <div class="benefit-heading reveal"><p class="eyebrow">À L’INTÉRIEUR DU PROGRAMME</p><h2>Ce que vous allez obtenir à l’intérieur de <i>The Eye That Sees Everything</i></h2><p>Vous allez apprendre à :</p></div>
+        <div class="benefit-list reveal"><div class="benefit-row"><span>01</span><p>Identifier les « parties malades » de votre relation avec une précision chirurgicale</p></div><div class="benefit-row"><span>02</span><p>Utiliser les outils de l’astrologie et de la numérologie pour comprendre ce qui se joue vraiment</p></div><div class="benefit-row"><span>03</span><p>Appliquer des protocoles magiques simples mais puissants pour rétablir l’équilibre</p></div><div class="benefit-row"><span>04</span><p>Transformer une relation qui souffre en une relation qui dure et qui rend heureux</p></div></div>
+      </div><p class="benefit-close reveal">Ce n’est pas un programme pour « améliorer un peu les choses ».<br><strong>C’est un programme pour ceux qui refusent de laisser leur relation mourir à petit feu.</strong></p>
+    </section>
+    <section class="inaction">
+      <div class="section-no">05 / LE PRIX DE L’INACTION</div><div class="inaction-copy reveal"><p class="eyebrow">LE TEMPS PASSE</p><h2>Imaginez dans <em>6 mois.</em><br>Un an.<br>Deux ans.</h2><p>Vous êtes toujours dans la même situation… ou pire.<br>Vous avez tout essayé.<br>Et maintenant, il ne reste plus que la douleur, les regrets, et le sentiment d’avoir laissé filer quelque chose d’important.</p><p>Pendant ce temps, d’autres couples auront utilisé exactement les mêmes outils que vous êtes en train de découvrir… et auront sauvé ce qui comptait vraiment pour eux.</p><p class="small-gold">La différence entre eux et vous ?<br><strong>Ils ont agi.</strong></p></div>
+    </section>
+    <section class="offer" id="offre">
+      <div class="section-no">06 / L’OFFRE</div><div class="offer-card reveal">
+        <div class="offer-ornament"><svg width="31" height="31" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M2.5 12s3.4-6 9.5-6 9.5 6 9.5 6-3.4 6-9.5 6-9.5-6-9.5-6Z" stroke="currentColor" stroke-width="1.15"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.15"/></svg><span>THE EYE THAT SEES EVERYTHING</span></div>
+        <p class="offer-kicker">Offre</p><p class="offer-title">The Eye That Sees Everything</p><p class="offer-description">Programme complet (Astrologie + Numérologie + Magie appliquée aux relations)</p>
+        <div class="price-row"><span class="old-price">Prix normal : <s>497 €</s></span><span class="price-label">Aujourd’hui seulement :</span><span class="price">37 <small>€</small></span></div>
+        <div class="assurances"><span>✧ Accès immédiat.</span><span>♢ Garantie 30 jours.</span></div><p class="refund">Si vous ne ressentez aucun changement, vous êtes remboursé. Sans discussion.</p>
+        <a class="buy" href="https://checkout.cooud.com/01M32V3EP2PNVEFMQ8GKSXW2N7"><span>OUI, JE VEUX SAUVER MA RELATION MAINTENANT</span><span aria-hidden="true">→</span></a><small class="secure">Accès immédiat après votre achat</small>
+      </div>
+    </section>
+    <section class="final">
+      <div class="section-no">07 / DERNIER AVERTISSEMENT</div><div class="final-copy reveal"><p class="eyebrow">LE CHOIX VOUS APPARTIENT</p><h2>Vous pouvez fermer cette page.</h2><p>Vous pouvez vous dire que « ce n’est peut-être pas pour vous ».<br>Vous pouvez continuer à espérer que les choses s’arrangent toutes seules.</p><p>Mais vous savez déjà, au fond de vous, que ça ne marchera pas.</p><p>Les zones malades de votre relation ne vont pas disparaître par magie…<br><strong>sauf si vous utilisez la bonne magie.</strong></p><p>La question n’est plus « est-ce que ça marche ? ».<br>La question est :</p><h3>Allez-vous laisser votre relation continuer à pourrir… ou allez-vous enfin ouvrir les yeux ?</h3><a class="buy" href="https://checkout.cooud.com/01M32V3EP2PNVEFMQ8GKSXW2N7"><span>OUI, JE VEUX SAUVER MA RELATION MAINTENANT</span><span aria-hidden="true">→</span></a></div>
+    </section>
+        <footer class="sales-footer"><a class="brand" href="#vente"><span class="brand-mark" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M2.5 12s3.4-6 9.5-6 9.5 6 9.5 6-3.4 6-9.5 6-9.5-6-9.5-6Z" stroke="currentColor" stroke-width="1.25"/><circle cx="12" cy="12" r="3.1" stroke="currentColor" stroke-width="1.25"/></svg></span><span class="brand-name">THE EYE <small>THAT SEES EVERYTHING</small></span></a><p>Les pratiques présentées sont spirituelles et symboliques. Elles ne remplacent pas un accompagnement professionnel et ne garantissent pas de résultat relationnel.</p><small>© THE EYE THAT SEES EVERYTHING</small></footer>
+  </main>
+  <script>
+    (() => {
+      const KEY = 'eye-sees-quiz-v1';
+      const questions = [
+        {id:'gender', text:'Quel est votre genre ?', options:['Homme','Femme','Non-binaire']},
+        {id:'birthDate', text:'Quelle est votre date de naissance ?', date:true},
+        {id:'relationship', text:'Comment va votre relation en ce moment ?', options:['Parfaite','Horrible','Peut s’améliorer','Au bord du divorce']},
+        {id:'cheating', text:'Avez-vous déjà été trompé(e) par votre partenaire ?', options:['Oui','Non','Pas à ma connaissance','J’ai perdu le compte']},
+        {id:'spiritual', text:'Êtes-vous une personne spirituellement active ?', options:['Oui','Non','Pas vraiment']}
+      ];
+      const stepContent = document.getElementById('stepContent');
+      const stepCount = document.getElementById('stepCount');
+      const progress = document.getElementById('progressFill');
+      const progressBar = document.querySelector('.progress');
+      const backButton = document.getElementById('backButton');
+      const nextButton = document.getElementById('nextButton');
+      const nextLabel = document.getElementById('nextLabel');
+      let answers = {};
+      let step = 0;
+      try {
+        const saved = JSON.parse(sessionStorage.getItem(KEY) || 'null');
+        if (saved && saved.answers) {
+          answers = saved.answers;
+          step = Math.min(questions.length - 1, Math.max(0, Number(saved.step) || 0));
+        }
+      } catch (_) {}
+      function save() {
+        try { sessionStorage.setItem(KEY, JSON.stringify({answers, step})); } catch (_) {}
+      }
+      function selectedValue() {
+        if (questions[step].date) return document.getElementById('birthDateInput')?.value || answers.birthDate || '';
+        return answers[questions[step].id] || '';
+      }
+      function updateButtons() {
+        nextButton.disabled = !selectedValue();
+        backButton.disabled = step === 0;
+        nextLabel.textContent = step === questions.length - 1 ? 'Découvrir mon message' : 'Continuer';
+      }
+      function renderStep() {
+        const q = questions[step];
+        stepCount.innerHTML = String(step + 1).padStart(2, '0') + ' <small>/ 05</small>';
+        progress.style.width = (((step + 1) / questions.length) * 100) + '%';
+        progressBar.setAttribute('aria-valuenow', String(step + 1));
+        let body = '<p class="step-label">QUESTION ' + (step + 1) + ' SUR 5</p><h3 class="question">' + q.text + '</h3>';
+        if (q.date) {
+          const date = answers.birthDate || '';
+          const offset = new Date().getTimezoneOffset() * 60000;
+          const today = new Date(Date.now() - offset).toISOString().slice(0,10);
+          body += '<label class="sr-only" for="birthDateInput">Votre date de naissance</label><input class="date-input" id="birthDateInput" type="date" autocomplete="bday" max="' + today + '" value="' + date + '"><span class="field-hint">Votre date reste dans cet onglet.</span>';
+        } else {
+          body += '<div class="options" role="group" aria-label="' + q.text.replace(/"/g,'&quot;') + '">';
+          q.options.forEach((label) => {
+            const isSelected = answers[q.id] === label;
+            body += '<button class="option' + (isSelected ? ' selected' : '') + '" type="button" data-value="' + label.replace(/"/g,'&quot;') + '" aria-pressed="' + isSelected + '"><span class="radio" aria-hidden="true"></span><span>' + label + '</span><span class="arrow" aria-hidden="true">→</span></button>';
+          });
+          body += '</div>';
+        }
+        stepContent.innerHTML = body;
+        stepContent.classList.remove('step-content');
+        void stepContent.offsetWidth;
+        stepContent.classList.add('step-content');
+        if (q.date) {
+          document.getElementById('birthDateInput').addEventListener('input', (event) => {
+            answers.birthDate = event.target.value;
+            save();
+            updateButtons();
+          });
+        } else {
+          stepContent.querySelectorAll('.option').forEach((button) => button.addEventListener('click', () => {
+            answers[q.id] = button.dataset.value;
+            save();
+            stepContent.querySelectorAll('.option').forEach((option) => {
+              const active = option === button;
+              option.classList.toggle('selected', active);
+              option.setAttribute('aria-pressed', String(active));
+            });
+            updateButtons();
+          }));
+        }
+        updateButtons();
+      }
+      function showSales(pushHash) {
+        save();
+        document.getElementById('quizView').hidden = true;
+        document.getElementById('salesView').hidden = false;
+        if (pushHash) history.pushState({page:'vente'}, '', '#vente');
+        window.scrollTo({top:0, behavior:'smooth'});
+        document.title = 'The Eye That Sees Everything — Offre';
+        observeReveals();
+      }
+      function showQuiz(pushHash) {
+        document.getElementById('salesView').hidden = true;
+        document.getElementById('quizView').hidden = false;
+        if (pushHash) history.pushState({page:'quiz'}, '', '#quiz');
+        window.scrollTo({top:0, behavior:'smooth'});
+        document.title = 'The Eye That Sees Everything — Votre lecture intérieure';
+      }
+      nextButton.addEventListener('click', () => {
+        if (!selectedValue()) return;
+        if (step === questions.length - 1) { showSales(true); return; }
+        step += 1;
+        save();
+        renderStep();
+      });
+      backButton.addEventListener('click', () => {
+        if (step === 0) return;
+        step -= 1;
+        save();
+        renderStep();
+      });
+      document.getElementById('reviewAnswers').addEventListener('click', (event) => {
+        event.preventDefault();
+        showQuiz(true);
+      });
+      window.addEventListener('popstate', () => {
+        if (location.hash === '#vente') showSales(false); else showQuiz(false);
+      });
+      function observeReveals() {
+        document.documentElement.classList.add('js-motion');
+        const items = document.querySelectorAll('.reveal:not(.visible)');
+        if (!('IntersectionObserver' in window)) { items.forEach((item) => item.classList.add('visible')); return; }
+        const observer = new IntersectionObserver((entries, currentObserver) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) { entry.target.classList.add('visible'); currentObserver.unobserve(entry.target); }
+          });
+        }, {threshold:.08});
+        items.forEach((item) => observer.observe(item));
+      }
+      renderStep();
+      if (location.hash === '#vente') showSales(false);
+      else document.documentElement.classList.add('js-motion');
+    })();
+  </script>
+</body>
+</html>
